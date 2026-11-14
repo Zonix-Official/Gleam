@@ -1,7 +1,7 @@
 plugins {
     id 'java-library'
     id 'maven-publish'
-    id 'net.neoforged.moddev' version '2.0.124'
+    id 'net.neoforged.moddev' version '2.0.148'
     id 'idea'
 }
 
@@ -123,9 +123,6 @@ dependencies {
             prefer lodestone_version
         }
     }*/
-
-    compileOnly "top.theillusivec4.curios:curios-neoforge:$curios_version:api"
-    runtimeOnly "top.theillusivec4.curios:curios-neoforge:$curios_version"
 
     compileOnly "net.caffeinemc:sodium-neoforge-mod:0.8.13+mc1.21.1"
     compileOnly("foundry.veil:veil-neoforge-${project.minecraft_version}:4.4.1") {
